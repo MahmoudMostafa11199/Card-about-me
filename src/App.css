@@ -1,38 +1,146 @@
-.App {
-  text-align: center;
+html {
+  font-size: 62.5%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+#root {
   min-height: 100vh;
+  background-color: #23252c;
+  padding: 2rem;
+}
+
+.App {
+  background-color: #1a1b21;
+  color: #f5f5f5;
+  max-width: 32rem;
+  margin: 0 auto;
+  border-radius: 0.6rem;
+}
+
+.info {
+  text-align: center;
+  margin-bottom: 2.2rem;
+}
+
+.img-info {
+  width: 100%;
+  height: 40rem;
+  margin-bottom: 1.6rem;
+  border-top-left-radius: 0.6rem;
+  border-top-right-radius: 0.6rem;
+}
+
+.info-name {
+  font-size: 2.3rem;
+}
+
+.info-job {
+  font-size: 1.6rem;
+  color: #f3bf99;
+  margin-bottom: 0.8rem;
+}
+
+.info-job + p {
+  margin-bottom: 1.8rem;
+}
+
+.info-website-box {
+  padding: 0 2rem;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.info-website:link,
+.info-website:visited {
+  font-size: 1.8rem;
+  background-color: #fff;
+  color: #222;
+  padding: 0.6rem 2.2rem;
+  text-decoration: none;
+  border-radius: 0.6rem;
+  transition: all 0.3s;
+
+  display: flex;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.info-website ion-icon {
+  margin-right: 0.6rem;
+}
+
+.linkedin:link,
+.linkedin:visited {
+  background-color: #4686de;
+  color: #fff;
+}
+
+.email:hover,
+.email:active {
+  background-color: #df6239;
+  color: #fff;
+}
+
+.linkedin:hover,
+.linkedin:active {
+  background-color: #3c74c2;
+}
+
+.about,
+.interests {
+  padding: 0 2rem;
+  margin-bottom: 2.2rem;
+}
+
+.about h2,
+.interests h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.6rem;
+}
+
+.about p,
+.interests p {
+  font-size: 1.4rem;
+  color: #cdcdcd;
+}
+
+.footer {
+  background-color: #161619;
+  padding: 2.2rem;
+  border-bottom-left-radius: 0.6rem;
+  border-bottom-right-radius: 0.6rem;
+
+  display: flex;
+  justify-content: space-around;
+}
+
+.icon-social:link,
+.icon-social:visited {
+  font-size: 2.4rem;
+  color: #000;
+  transition: all 0.3s;
+}
+
+.icon-social ion-icon {
+  background-color: #918e9b;
+  transition: all 0.3s;
+}
+
+.icon-social:hover ion-icon,
+.icon-social:active ion-icon {
+  transform: translateY(-5%);
+  color: #0d69c5;
+}
+
+.instagram:hover ion-icon {
+  color: #f501a1;
+}
+
+.github:hover ion-icon {
+  color: #1b1f23;
 }
